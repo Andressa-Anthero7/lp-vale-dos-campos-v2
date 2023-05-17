@@ -1,34 +1,74 @@
+
 <!DOCTYPE html>
+
+
 <html>
 <head>
-	<title>REALIZE IMÓVEIS</title>
+
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Antherus</title>
+
+	 
 	<!-- Jquery CDN -->
 	 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 	<!-- Boostrap 4 CDN  -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	
+
 	<!-- FontAwesome CDN -->
 	<script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="fontawesome/css/all.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
 
 	<!-- CSS -->
 	 <link rel="stylesheet" type="text/css" href="estilo.css">
 
 
 	<!-- Java Script -->
-	 <script type="text/javascript" src="scripts.js"></script>
-</head>
-<body>
-	<!-- CONTAINER -->
-	<div class="container-fluid">
+	 <script type="text/javascript" src="scripts"></script>
 
-		<!-- HEADER -->
-		<header class="text-center bg-white">
-			<img src="logo-realize-sonhos.png" alt="logo-marca" class="img img-fluid" id="logomarca">
-		</header> 
+
+</head>
+
+<!-- Corpo do HTML -->
+<body >
+	<!-- Container -->
+	<div class="container-fluid ">
+
+		<!-- Header da Pagina -->
+		<header id="header" class="bg-white m-0">
+			<!-- Imagem da Logo -->
+			<img src="logo-marca.png" id="img-logo">
+		</header>
+
+		<!-- HEAD LINE -->
+		<div id="head-line" class="my-3  ">
+			<h4 class=" text-center" id="header-head-line">Você está a poucos passos dessa linda casa na melhor localização de Araraquara!</h4>
+			<p class="texto-head-line text-center">Comece essa nova etapa do seu sonho!!!</p>
+		</div>
+
+		<!-- VIDEO -->
+		<div id="video" class="text-center bg-white rounded  text-dark shadow">
+			<h5 id="header-video" >Assista o vídeo e conheça mais!</h5>
+			<p id="text-header-video" >A sua casa nova está aqui...</p>
+			<video  controls autoplay loop>
+			  <source src="video.mp4" type="video/mp4" >
+			  Your browser does not support the video tag.
+			</video>
+		</div>
+
+		
+
+		<!--BTN CTA WHATSAPP -->
+		<div id="area-btn-whatsapp" class="text-center btn btn-success mx-1 my-4 p-2 neon-texto">
+			<i class="fa fa-whatsapp icone-whatsapp"></i>
+			<a  id="btn-falar-whatsapp" href="https://wa.me/55?text=Acabei%20de%20ver%20a%20casa%20no%20condomínio%20Vale%20dos%20Campos%20-%20Araraquara%20Gostaria%20de%20saber%20mais%20sobre%20o%20imóvel!!">Saiba como Adquirir essa linda casa!!</a>
+		</div>
 
 		<!-- CARROUSSEL -->
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -84,120 +124,72 @@
 		</div>
 
 
-
-		<!-- AREA FORMULARIO -->
-		<div id="area-formulario">
-			<!--COPY FORMULARIO -->
-			<div class=" m-0 text-center" id="copy-formulario">
-				<h4 class="py-1" id="header-copy-formulario">Você está a poucos passos dessa linda casa na melhor localização de Araraquara!</h4>
-				<h5 class="p-1">Preencha o formulário e começa essa nova etapa do seu sonho!!!</h5>
-			</div>
-			<form id="formulario">
-				<div id="campo-nome-leads" class="p-1">
-					<label for="nome-leads" class="label">Nome</label>
-					<input type="input" name="nome-leads" id="nome-leads" class="form-control">
-				</div>
-
-				<div id="campo-email-leads" class="p-1">
-					<label for="email-leads" class="label">E-mail</label>
-					<input type="input" name="email-leads" id="email-leads" class="form-control">
-				</div>
-
-				<div id="campo-whatsapp-leads" class="p-1">
-					<label for="whatsapp-leads" class="label">What´s App</label>
-					<input type="input" name="whatsapp-leads" id="whatsapp-leads" class="form-control">
-				</div>
-
-				<div id="campo-aceita-termos" class="p-1">
-					<input type="checkbox" name="aceita-termos" id="aceita-termos" >
-					<label for="aceita-termos" class="d-inline">Sim! Autorizo contato para obter as condições de negociação para o imóvel dos meus sonhos.</label>
-				</div>
-
-				<div id="campo-btn-enviar" class="p-2 text-center">
-					<input type="button" id="enviar" name="enviar-formulario"  class="btn btn-warning p-2" disabled>
-				</div>
-			</form>
-		</div>
-		<!-- FINAL AREA FORMULARIO -->
-
-		<!-- COPY 2 -->
-		<div id="copy-2" class="text-center p-1 mt-3">
-			<div id="headers-copy-2">
-				<h5 class="">Ainda tem dúvida que esse é o seu imóvel ideal!!<h5>
-				<h6 class="p-1">Veja todos os detalhes dessa linda casa no Condominio Vale do Campo</h6>
-			</div>
-			
-			<div id="lista-destaques">
-				<ul>
-					<li>3 suítes</li>
-					<li>1 master com closet</li>
-					<li>Todos quartos com armários</li>
-					<li>2 deles com ar condicionado</li>
-					<li>Ar condicionado na sala</li>
-					<li>Sofá</li>
-					<li>Painel da tv</li>
-					<li>Cortinas sala e quarto</li>
-					<li>Forno</li>
-					<li>Cooktop</li>
-					<li>Home da sala</li>
-					<p class="p-1 text-center">Ambientes Totais 10 <br>Dormitórios
-						3
-						<br>
-						Banheiros
-						4
-						<br>
-						Área Útil
-						240
-						<br>
-						Tamanho do Lote (M²)
-						240
-						<br>
-						Total M²
-						137,11
-						<br>Ano/ Mês de Construção 2017/06
-
-					</p>
-				</ul>
-			</div>
-			<h3 class="text-center">Assista ao Vídeo</h3>
-		</div>
-		<img id="seta-para-baixo" src="seta-para-baixo.png" class="text-center img img-fluid">
-		<!-- VIDEO -->
-		<div id="area-video" >
-			<iframe id="video" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FDrieli.Cosultora%2Fvideos%2F288701243485720%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-			
-		</div>
-
-		<!-- MAPA LOCALIZACAO -->
-		<div id="localizacao">
-			<iframe id="mapa-localizacao" class="border rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.4333638177563!2d-48.15550002602039!3d-21.755350780082033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f6c90f8f6ddd%3A0xbad09c4d4d4e0400!2sResidencial%20Vale%20do%20Campo!5e1!3m2!1spt-BR!2sbr!4v1684293173685!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			
-		</div>
 		
 
 
-
-
-
-		<!--COPY FINAL -->
-		<div id="copy-final" class="text-center">
-			<h5 id="header-copy-final">Agora que você já viu todos os detalhes dessa casa incrível!!</h5>
-			<div class="p-3">
-				<a href="#formulario" id="voltar-formulario" name="voltar-formulario"  class="btn btn-warning p-2 " >Preencher Formulário</a>
-			</div>
-		</div>
-
-
 		
-		
+
+		<!-- Texto Perssuasivo -->
+	<div id="texto-auxiliar" class="text-center">
+
+		<ul id="lista-beneficios" class="card text-dark">
+			<h4 id="header-lista-benificios font-weight-900" class="text-center m-3">Imóvel Inclui</h4>
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>3 suítes</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>1 master com closet</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>4 Vagas na Garagem</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>1 Lavabo</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Todos Quartos com armários</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>2 Quartos com ar condicionado</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Ar condicionado na sala</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Sofá</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Painel TV</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Cortinas Sala e Quartos</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Forno</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Cooktop</li>
+
+			<li class="item-lista-beneficios"><i class='fa fa-check mr-1 check-lista-beneficios'></i>Home da Sala</li>
+			<br>
+
+			<p class="p-2 ml-2 text-center" id="texto-chamada-final">Ao todo são 10 ambientes distribuidos em 3 dormitórios, 4 Banheiros e demais dependências como area de servicos, área externas.<br>
+			Lote de 240m² e área construída 177,11m² construída em 2017 em excelente condomínio com segurança e privacidade que você merece!!!</p>
+		</ul>
+
 
 	</div>
-	<!--FINAL CONTAINER -->
-	<footer class="text-center py-3 mt-4" >
-			<i class="fa fa-copyright" aria-hidden="true">Copyright</i>
-			<div>Antherus - Desenvolvimento Web</div>
-			<small><i class="fa fa-whatsapp mr-1" aria-hidden="true"></i><span>(16) 99337-9492</span></small>
-		</footer>
+
+	<!--BTN CTA WHATSAPP -->
+		<div id="area-btn-whatsapp" class="text-center btn btn-success mx-1 my-4 p-2 neon-texto">
+			<i class="fa fa-whatsapp icone-whatsapp"></i>
+			<a  id="btn-falar-whatsapp" href="https://wa.me/55?text=Acabei%20de%20ver%20a%20casa%20no%20condomínio%20Vale%20dos%20Campos%20-%20Araraquara%20Gostaria%20de%20saber%20mais%20sobre%20o%20imóvel!!">Saiba como Adquirir essa linda casa!!</a>
+		</div>
+
+		
+
+	<footer class="text-center my-5" >
+		<i class="fa fa-copyright" aria-hidden="true">Copyright</i>
+		<div>Antherus - Desenvolvimento Web</div>
+		<small><i class="fa fa-whatsapp mr-1" aria-hidden="true"></i><span>(16) 99337-9492</span></small>
+	</footer>
+
+
+
+	</div>
+	<!-- FINAL CONTAINER -->
+
+
+
+
 
 
 
@@ -205,6 +197,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
